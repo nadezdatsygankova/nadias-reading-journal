@@ -17,7 +17,7 @@ function BookCard({ book, allBooks = [] }) {
   }, [showModal])
 
   const handleShare = async () => {
-    const url = `${window.location.origin}#book-${book.id}`
+    const url = `${window.location.origin}/#book-${book.id}`
     try {
       await navigator.share({
         title: `${book.title} by ${book.author}`,
