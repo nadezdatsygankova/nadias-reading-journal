@@ -1,4 +1,6 @@
-# 📚 My Reading Journal
+# 📚 Nadia's Reading Journal
+
+**Eyes on Pages, Ears on Stories** — Books I've read, audiobooks I've heard, and moments in between.
 
 A beautiful, modern reading journal built with React that lets you track your books with markdown files - just like a blog!
 
