@@ -133,53 +133,62 @@ function BookCard({ book, allBooks = [] }) {
               <button className="modal-close" onClick={() => setShowModal(false)}>×</button>
               <button className="modal-share" onClick={handleShare} title="Share book">🔗</button>
             </div>
-            <div className="book-header-full">
-              <div className="book-info-full">
-                <div className="book-status-full">{getStatusText(book.status)}</div>
-                <h2 className="book-title-full">{book.title}</h2>
-                {book.author && (
-                  <p className="book-author-full">by {book.author}</p>
-                )}
-                {book.rating && (
-                  <div className="rating-display-full">
-                    {renderStars(book.rating)}
-                  </div>
+            
+            {book.cover && (
+              <div className="modal-book-cover">
+                <img src={getCoverUrl(book.title, book.author)} alt={book.title} />
+              </div>
+            )}
+            
+            <div className="modal-main-content">
+              <div className="book-header-full">
+                <div className="book-info-full">
+                  <div className="book-status-full">{getStatusText(book.status)}</div>
+                  <h2 className="book-title-full">{book.title}</h2>
+                  {book.author && (
+                    <p className="book-author-full">by {book.author}</p>
+                  )}
+                  {book.rating && (
+                    <div className="rating-display-full">
+                      {renderStars(book.rating)}
+                    </div>
+                  )}
+                </div>
+                {book.date && (
+                  <time className="book-date-full">{new Date(book.date).toLocaleDateString('en-US', {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric'
+                  })}</time>
                 )}
               </div>
-              {book.date && (
-                <time className="book-date-full">{new Date(book.date).toLocaleDateString('en-US', {
-                  year: 'numeric',
-                  month: 'long',
-                  day: 'numeric'
-                })}</time>
+
+              {book.review && (
+                <div className="book-review-full">
+                  <div dangerouslySetInnerHTML={{ __html: book.review }} />
+                </div>
+              )}
+
+              {getRecommendations().length > 0 && (
+                <div className="book-recommendations">
+                  <h3 className="recommendations-title">You might also like:</h3>
+                  <div className="recommendations-list">
+                    {getRecommendations().map(rec => (
+                      <div
+                        key={rec.id}
+                        className="recommendation-item"
+                        onClick={() => setShowModal(false)}
+                      >
+                        <div className="recommendation-info">
+                          <strong>{rec.title}</strong>
+                          {rec.author && <span>by {rec.author}</span>}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
               )}
             </div>
-
-            {book.review && (
-              <div className="book-review-full">
-                <div dangerouslySetInnerHTML={{ __html: book.review }} />
-              </div>
-            )}
-
-            {getRecommendations().length > 0 && (
-              <div className="book-recommendations">
-                <h3 className="recommendations-title">You might also like:</h3>
-                <div className="recommendations-list">
-                  {getRecommendations().map(rec => (
-                    <div
-                      key={rec.id}
-                      className="recommendation-item"
-                      onClick={() => setShowModal(false)}
-                    >
-                      <div className="recommendation-info">
-                        <strong>{rec.title}</strong>
-                        {rec.author && <span>by {rec.author}</span>}
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )}
           </div>
         </div>
       )}
