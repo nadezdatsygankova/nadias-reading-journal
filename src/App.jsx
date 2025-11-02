@@ -152,7 +152,7 @@ function App() {
               <a href="https://blog-tsy-nadia.netlify.app/en" target="_blank" rel="noopener noreferrer" className="footer-link">
                 <i className="fas fa-earth-americas"></i> Travel Blog
               </a>
-              <a href="https://www.instagram.com/nadiatsy" target="_blank" rel="noopener noreferrer" className="footer-link">
+              <a href="https://www.instagram.com/nadintoronto/" target="_blank" rel="noopener noreferrer" className="footer-link">
                 <i className="fab fa-instagram"></i> Instagram
               </a>
             </div>
