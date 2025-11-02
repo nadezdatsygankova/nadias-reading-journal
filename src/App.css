@@ -6,9 +6,9 @@
 }
 
 .app-header {
-  background: white;
+  background: #2c3e50;
   padding: 48px 40px;
-  border-bottom: 1px solid #e9ecef;
+  border-bottom: 1px solid #1a252f;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
   position: sticky;
   top: 0;
@@ -17,8 +17,8 @@
 }
 
 .dark .app-header {
-  background: #2d2d2d;
-  border-bottom-color: #3d3d3d;
+  background: #1a252f;
+  border-bottom-color: #0f1419;
 }
 
 .header-content-wrapper {
@@ -37,7 +37,7 @@
 .header-title {
   font-size: 2.2rem;
   font-weight: 700;
-  color: #2c3e50;
+  color: white;
   margin: 0 0 8px 0;
   letter-spacing: -0.02em;
   line-height: 1.2;
@@ -46,7 +46,7 @@
 
 .header-subtitle {
   font-size: 1.1rem;
-  color: #7f8c8d;
+  color: #a9915d;
   margin: 0 0 4px 0;
   font-weight: 400;
   line-height: 1.5;
@@ -54,7 +54,7 @@
 
 .header-byline {
   font-size: 0.95rem;
-  color: #95a5a6;
+  color: #c9c5b8;
   margin: 0;
   font-style: italic;
 }
@@ -73,7 +73,7 @@
 
 .dark-mode-toggle {
   background: transparent;
-  border: 2px solid #e9ecef;
+  border: 2px solid white;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -86,7 +86,8 @@
 }
 
 .dark-mode-toggle:hover {
-  border-color: #2c3e50;
+  border-color: white;
+  background: white;
   transform: scale(1.05);
 }
 
@@ -106,7 +107,7 @@
 .search-input-header {
   flex: 0 0 350px;
   padding: 12px 16px;
-  border: 2px solid #e9ecef;
+  border: 2px solid white;
   border-radius: 8px;
   font-size: 0.95rem;
   font-family: inherit;
@@ -117,12 +118,12 @@
 
 .search-input-header:focus {
   outline: none;
-  border-color: #2c3e50;
-  box-shadow: 0 0 0 3px rgba(44, 62, 80, 0.1);
+  border-color: #a9915d;
+  box-shadow: 0 0 0 3px rgba(169, 145, 93, 0.1);
 }
 
 .search-input-header::placeholder {
-  color: #95a5a6;
+  color: #8B7355;
 }
 
 .filters-container {
@@ -149,7 +150,7 @@
 
 .filter-select {
   padding: 8px 12px;
-  border: 2px solid #e9ecef;
+  border: 2px solid #a9915d;
   border-radius: 8px;
   font-size: 0.9rem;
   cursor: pointer;
@@ -211,7 +212,7 @@
 }
 
 .btn-primary:hover {
-  background: #34495e;
+  background: #1a252f;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(44, 62, 80, 0.2);
 }
@@ -228,7 +229,7 @@
 .btn-secondary-header {
   background: transparent;
   color: #2c3e50;
-  border: 1px solid #dee2e6;
+  border: 1px solid #2c3e50;
   padding: 10px 20px;
   font-size: 0.9rem;
   font-weight: 600;
@@ -239,8 +240,9 @@
 }
 
 .btn-secondary-header:hover:not(:disabled) {
-  background: #f8f9fa;
-  border-color: #adb5bd;
+  background: #2c3e50;
+  color: white;
+  border-color: #2c3e50;
   transform: translateY(-1px);
 }
 
@@ -250,16 +252,16 @@
 }
 
 .app-footer {
-  background: white;
-  border-top: 1px solid #e9ecef;
+  background: #2c3e50;
+  border-top: 1px solid #1a252f;
   padding: 40px;
   margin-top: 60px;
   transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .dark .app-footer {
-  background: #2d2d2d;
-  border-top-color: #3d3d3d;
+  background: #1a252f;
+  border-top-color: #0f1419;
 }
 
 .footer-content {
@@ -277,7 +279,7 @@
 .footer-top h3 {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #2c3e50;
+  color: white;
   margin: 0;
   letter-spacing: -0.02em;
 }
@@ -289,7 +291,7 @@
 }
 
 .footer-link {
-  color: #2c3e50;
+  color: #a9915d;
   text-decoration: none;
   font-size: 0.9rem;
   font-weight: 500;
@@ -300,18 +302,18 @@
 }
 
 .footer-link:hover {
-  color: #667eea;
+  color: white;
 }
 
 .footer-bottom {
   padding-top: 24px;
-  border-top: 1px solid #e9ecef;
+  border-top: 1px solid #a9915d;
   text-align: center;
 }
 
 .footer-bottom p {
   margin: 4px 0;
-  color: #7f8c8d;
+  color: #c9c5b8;
   font-size: 0.85rem;
 }
 

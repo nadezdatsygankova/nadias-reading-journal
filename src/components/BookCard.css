@@ -3,7 +3,7 @@
   border-radius: 12px;
   padding: 24px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
-  border: 1px solid #e9ecef;
+  border: 1px solid #a9915d;
   transition: all 0.3s ease;
   position: relative;
   cursor: pointer;
@@ -14,8 +14,8 @@
 
 .book-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-  border-color: #dee2e6;
+  box-shadow: 0 8px 24px rgba(44, 62, 80, 0.1);
+  border-color: #2c3e50;
 }
 
 .book-cover {
@@ -49,7 +49,7 @@
 }
 
 .book-status {
-  color: #7f8c8d;
+  color: #8B7355;
   font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -67,7 +67,7 @@
 }
 
 .book-author {
-  color: #95a5a6;
+  color: #8B7355;
   font-size: 0.95rem;
   margin-bottom: 12px;
   font-weight: 400;
@@ -83,7 +83,7 @@
 }
 
 .book-date {
-  color: #7f8c8d;
+  color: #8B7355;
   font-size: 0.85rem;
   font-weight: 500;
   text-transform: uppercase;
@@ -96,12 +96,12 @@
   gap: 8px;
   margin-bottom: 16px;
   padding-top: 16px;
-  border-top: 1px solid #f1f3f5;
+  border-top: 1px solid #a9915d;
 }
 
 .book-tag {
-  background: #f1f3f5;
-  color: #495057;
+  background: #a9915d;
+  color: white;
   padding: 4px 10px;
   border-radius: 12px;
   font-size: 0.85rem;
@@ -110,8 +110,8 @@
 }
 
 .book-tag:hover {
-  background: #dee2e6;
-  color: #2c3e50;
+  background: #2c3e50;
+  color: white;
 }
 
 .book-review-preview {
@@ -179,7 +179,7 @@
 
 .modal-close,
 .modal-share {
-  background: #f1f3f5;
+  background: #a9915d;
   border: none;
   width: 40px;
   height: 40px;
@@ -191,12 +191,13 @@
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
-  color: #2c3e50;
+  color: white;
 }
 
 .modal-close:hover,
 .modal-share:hover {
-  background: #dee2e6;
+  background: #2c3e50;
+  color: white;
   transform: scale(1.1);
 }
 
@@ -222,7 +223,7 @@
 .book-header-full {
   margin-bottom: 32px;
   padding-bottom: 32px;
-  border-bottom: 2px solid #f1f3f5;
+  border-bottom: 2px solid #a9915d;
 }
 
 .book-info-full {
@@ -230,7 +231,7 @@
 }
 
 .book-status-full {
-  color: #7f8c8d;
+  color: #8B7355;
   font-size: 0.9rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -248,7 +249,7 @@
 }
 
 .book-author-full {
-  color: #95a5a6;
+  color: #8B7355;
   font-size: 1.2rem;
   margin-bottom: 16px;
   font-weight: 400;
@@ -264,7 +265,7 @@
 }
 
 .book-date-full {
-  color: #7f8c8d;
+  color: #8B7355;
   font-size: 1rem;
   font-weight: 500;
   text-transform: uppercase;
@@ -339,7 +340,7 @@
 .book-recommendations {
   margin-top: 40px;
   padding-top: 32px;
-  border-top: 2px solid #f1f3f5;
+  border-top: 2px solid #a9915d;
 }
 
 .recommendations-title {
@@ -358,7 +359,7 @@
 
 .recommendation-item {
   background: #f8f9fa;
-  border: 1px solid #e9ecef;
+  border: 1px solid #a9915d;
   border-radius: 8px;
   padding: 16px;
   cursor: pointer;
@@ -366,8 +367,8 @@
 }
 
 .recommendation-item:hover {
-  background: #ecece6;
-  border-color: #dee2e6;
+  background: #a9915d;
+  border-color: #2c3e50;
   transform: translateX(4px);
 }
 
@@ -384,7 +385,7 @@
 }
 
 .recommendation-info span {
-  color: #7f8c8d;
+  color: #8B7355;
   font-size: 0.9rem;
 }
 

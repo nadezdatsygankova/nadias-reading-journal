@@ -133,13 +133,13 @@ function BookCard({ book, allBooks = [] }) {
               <button className="modal-close" onClick={() => setShowModal(false)}>×</button>
               <button className="modal-share" onClick={handleShare} title="Share book">🔗</button>
             </div>
-            
+
             {book.cover && (
               <div className="modal-book-cover">
                 <img src={getCoverUrl(book.title, book.author)} alt={book.title} />
               </div>
             )}
-            
+
             <div className="modal-main-content">
               <div className="book-header-full">
                 <div className="book-info-full">
